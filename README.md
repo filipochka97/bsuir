@@ -1,2 +1,2 @@
-# bsuir
+# BSUIR
 Take it easy:) 

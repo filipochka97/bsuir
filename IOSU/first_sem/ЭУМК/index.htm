@@ -1,0 +1,136 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="Оболочка/css/style.css" type=text/css>
+<script language="JavaScript">
+	function menuIdmReload()
+	{
+		var a;
+		for (i=1; i<=6; i++)
+		{
+			a = document.getElementById("idm"+i);
+			a.style.fontWeight = "normal";
+			a.style.color = "#6495ED";
+		}
+		var openWindow = window.parent.content.location.href;
+		var m = openWindow.charAt(openWindow.length-5);
+		a = window.document.getElementById("idm"+m);
+		a.style.fontWeight = "bold";
+		a.style.color = "#ffffff";
+	}	
+	</script>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>ЭУМК по дисциплине "ИНФОРМАЦИОННОЕ ОБЕСПЕЧЕНИЕ СИСТЕМ УПРАВЛЕНИЯ" </title>
+<base target="_top">
+</HEAD>
+<BODY onLoad="MM_preloadImages('Оболочка/images/program.jpg','Оболочка/images/theory.jpg','Оболочка/images/practice.jpg','Оболочка/images/question.jpg')">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);} 
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</SCRIPT>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="Оболочка/images/background.jpg">
+  <tr> 
+  <td width="13%" rowspan=3 align="center" >
+  <img src="Оболочка/images/logo_left.png" width=117 height=97 align="middle">
+   </td>
+  <tr> 
+   <td width="70%" colspan=2 align="center" valign="middle">
+   <H1 align="center">электронный учебно-методический комплекс по дисциплине<BR>"<strong>ИНФОРМАЦИОННОЕ ОБЕСПЕЧЕНИЕ СИСТЕМ УПРАВЛЕНИЯ " (ЧАСТЬ 1)</strong> <BR>для специальностей: </h1>
+  <span style="text-align:center">I&ndash;53 01 07 &laquo;Информационные технологии и управление в технических системах&raquo;</span>
+</td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <tr>
+	<td align="center">
+	<var class="headerbar">
+	<a id="idm1" href="index.htm" target="content">Главная</a> | 
+	<a id="idm2" href="Программа/programm.htm" target="content">Программа</a> | 
+	<a id="idm3" href="Теория/theory.htm" target="content">Теория</a> | 
+	<a id="idm4" href="Практика/practice.htm" target="content">Практика</a> | 
+	<a id="idm5" href="Контроль_знаний/test.htm" target="content">Контроль знаний</a> | 
+	<a id="idm6" href="Об_авторах/author.htm" target="content">Об авторах</a>
+	</var>
+	<td>
+</tr>
+</table>
+<script language="JavaScript">
+	menuIdmReload();
+</script>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<CENTER><table border="0" cellpadding="0" cellspacing="0">
+    <td><table width="99%" height="370" border="0" cellpadding="4" cellspacing="0">
+  <tr> 
+    <td width=25% height="282" align=center><EM><B><A HREF="Программа/programm.htm" TITLE="Программа курса"><img src="Оболочка/images/program_gray.jpg" name="program" width="220" height="270" border="0" onMouseOver=MM_swapImage('program','','Оболочка/images/program.jpg',1) onMouseOut="MM_swapImgRestore()">    </A></EM></td>
+    <td width=25% align=center><EM><B><A HREF="Теория/theory.htm" TITLE="Теоретические сведения"><img src="Оболочка/images/theory_gray.jpg" name="theory" width="220" height="270" border="0"  onMouseOver=MM_swapImage('theory','','Оболочка/images/theory.jpg',1) onMouseOut="MM_swapImgRestore()"></A></EM></td>
+    <td width=25% align=center><EM><B><A HREF="Практика/practice.htm" TITLE="Лабораторный практикум"><img src="Оболочка/images/practice_gray.jpg" name="practics" width="220" height="270" border="0" onMouseOver=MM_swapImage('practics','','Оболочка/images/practice.jpg',1) onMouseOut="MM_swapImgRestore()"></A></EM></td>
+    <td width=25% align=center><EM><B><A HREF="Контроль_знаний/test.htm" TITLE="Контроль знаний"><img src="Оболочка/images/question_gray.jpg" name="tests" width="220" height="270" border="0" onMouseOver=MM_swapImage('tests','','Оболочка/images/question.jpg',1) onMouseOut="MM_swapImgRestore()"></A></EM></td>
+  <tr>
+    <td height="38" align=center><EM><B><A HREF="Программа/programm.htm" TITLE="Программа курса">
+      </div>
+      Программа дисциплины и методические указания    </A></EM></td>
+    <td align=center><EM><A HREF="Теория/theory.htm" >
+      <CENTER>
+        <B>Теория по курсу</b>
+</center>
+    </A></EM></td>
+    <td align=center><EM><B><A HREF="Практика/practice.htm" >
+      </div>
+      Практика    </A></EM></td>
+    <td align=center><EM><B><A HREF="Контроль_знаний/test.htm" TITLE="Контроль знаний">
+      </div>
+      <CENTER>
+        Контроль знаний
+      </center>
+    </A></EM></td>
+  
+<TR>
+  <TD><CENTER>
+    <EM>Рабочая программа дисциплины</EM>
+  </CENTER></TD>
+  <TD><CENTER>
+    <EM>Материалы для теоретического изучения дисциплины</EM>
+  </CENTER></TD>
+  <TD><CENTER>
+    <EM>Материалы для практических занятий, лабораторного практикума по дисциплине</EM>
+    </CENTER></TD>
+  <TD><CENTER>
+    <EM>Дополнительные средства для проверки усвоения материала, контроля полученных знаний</EM>
+    </CENTER></TD>
+</tr>
+</table>
+</table>
+<br>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><b>&copy;  БГУИР</b></var></td>
+  </tr>
+</table>
+</BODY>
+</HTML>

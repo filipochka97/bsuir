@@ -1,0 +1,585 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/src/signout.php"; top.location = "/src/signout.php" } }
+// -->
+</script>
+
+<title>Почта БГУИР</title><script language="JavaScript" type="text/javascript">
+<!--
+function checkForm() {
+   var f = document.forms.length;
+   var i = 0;
+   var pos = -1;
+   while( pos == -1 && i < f ) {
+       var e = document.forms[i].elements.length;
+       var j = 0;
+       while( pos == -1 && j < e ) {
+           if ( document.forms[i].elements[j].type == 'text'            || document.forms[i].elements[j].type == 'password' ) {
+               pos = j;
+           }
+           j++;
+       }
+   i++;
+   }
+   if( pos >= 0 ) {
+       document.forms[i-1].elements[pos].focus();
+   }
+   
+}
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" onload="checkForm();">
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+&nbsp;      </td>
+<td align="right">
+<b>
+<a href="/src/signout.php" target="_top">Закончить сеанс</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/src/compose.php?mailbox=None&amp;startMessage=0">Новое</a>&nbsp;&nbsp;
+<a href="/src/addressbook.php">Адреса</a>&nbsp;&nbsp;
+<a href="/src/folders.php">Папки</a>&nbsp;&nbsp;
+<a href="/src/options.php">Настройка</a>&nbsp;&nbsp;
+<a href="/src/search.php?mailbox=None">Поиск</a>&nbsp;&nbsp;
+<a href="/src/help.php">Справка</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://www.bsuir.by/" target="_blank">БГУИР</a></td>
+   </tr>
+</table><br>
+
+<br /><table width="100%" border="0" cellspacing="0" cellpadding="2" align="center"><tr><td bgcolor="#dcdcdc">
+<b><center>
+Просмотр текстового вложения - <a href="read_body.php?mailbox=INBOX&amp;passed_id=1374&amp;startMessage=1&amp;ent_id=0">Просмотр сообщения</a></b></td><tr><tr><td><center>
+<a href="../src/download.php?mailbox=INBOX&amp;passed_id=1374&amp;startMessage=1&amp;ent_id=2&amp;absolute_dl=true">Загрузить сообщение на диск</a></center><br />
+</center></b>
+</td></tr></table>
+<table width="98%" border="0" cellspacing="0" cellpadding="2" align="center"><tr><td bgcolor="#dcdcdc">
+<tr><td bgcolor="#ffffff"><tt>
+<pre>﻿d:\work\ЭУМК_МвПСС (htm)\catalog.txt
+d:\work\ЭУМК_МвПСС (htm)\header.htm
+d:\work\ЭУМК_МвПСС (htm)\index.htm
+d:\work\ЭУМК_МвПСС (htm)\index1.htm
+d:\work\ЭУМК_МвПСС (htm)\menu.htm
+d:\work\ЭУМК_МвПСС (htm)\data\nav_style.css
+d:\work\ЭУМК_МвПСС (htm)\data\nav_style2.css
+d:\work\ЭУМК_МвПСС (htm)\data\style.css
+d:\work\ЭУМК_МвПСС (htm)\data\style2.css
+d:\work\ЭУМК_МвПСС (htm)\data\Wordstyle.css
+d:\work\ЭУМК_МвПСС (htm)\data\images\air_logo.png
+d:\work\ЭУМК_МвПСС (htm)\data\images\control.jpg
+d:\work\ЭУМК_МвПСС (htm)\data\images\control_gray.jpg
+d:\work\ЭУМК_МвПСС (htm)\data\images\practice.jpg
+d:\work\ЭУМК_МвПСС (htm)\data\images\practice_gray.jpg
+d:\work\ЭУМК_МвПСС (htm)\data\images\program.JPG
+d:\work\ЭУМК_МвПСС (htm)\data\images\program_gray.JPG
+d:\work\ЭУМК_МвПСС (htm)\data\images\theory.jpg
+d:\work\ЭУМК_МвПСС (htm)\data\images\theory_gray.jpg
+d:\work\ЭУМК_МвПСС (htm)\Контроль знаний\index5.htm
+d:\work\ЭУМК_МвПСС (htm)\Об ЭУМК\index6.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\fixie.js
+d:\work\ЭУМК_МвПСС (htm)\Практика\index4.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\leftmenu.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\practic_work.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\rightpage.htm
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\ctrl_work.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image001.emz
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image002.png
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image003.png
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image004.wmz
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image005.png
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\image006.png
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\oledata.mso
+d:\work\ЭУМК_МвПСС (htm)\Практика\ctrl_work.files\themedata.thmx
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_3.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.htm
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.htm
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_1.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_1.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_2.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\image002.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\image003.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_2.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_3.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_3.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_3.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_4.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_4.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_5.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_5.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_6.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_6.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_7.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_7.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_8.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image002.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image003.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image003a.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_8.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_intro.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image002.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image003.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image003a.JPG
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_intro.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Практика\labs\lab_list.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.files\image001.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.files\image005.gif
+d:\work\ЭУМК_МвПСС (htm)\Практика\labs\lab_list.files\themedata.thmx
+d:\work\ЭУМК_МвПСС (htm)\Программа\index2.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\leftmenu.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_0.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_1.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_2.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_3.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_4.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_5.htm
+d:\work\ЭУМК_МвПСС
+(htm)\Программа\programm_0.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_0.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_0.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_0.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Программа\programm_1.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_1.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_1.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_1.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Программа\programm_3.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_3.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_3.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_3.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Программа\programm_4.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_4.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_4.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_4.files\themedata.thmx
+d:\work\ЭУМК_МвПСС
+(htm)\Программа\programm_5.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_5.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_5.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Программа\programm_5.files\themedata.thmx
+d:\work\ЭУМК_МвПСС (htm)\Теория\index3.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\leftmenu.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\rightpage.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_0.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_1.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_2.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_3.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_4.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_5.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_6.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_7.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\theory_ending.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\colorschememapping.xml
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\filelist.xml
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\header.htm
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\i1.GIF
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\i2.GIF
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\i3.GIF
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\i4.GIF
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\i5.GIF
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image001.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image002.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image003.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image004.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image005.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image006.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image007.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image008.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image009.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image010.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image011.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image012.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image013.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image014.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image015.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image016.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image017.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image018.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image019.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image020.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image021.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image022.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image023.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image024.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image025.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image026.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image027.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image028.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image029.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image030.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image031.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image032.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image033.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image034.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image035.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image036.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image037.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image038.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image039.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image040.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image041.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image042.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image043.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image044.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image045.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image046.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image047.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image048.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image049.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image050.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image051.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image052.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image053.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image054.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image055.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image056.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image057.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image058.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image059.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image060.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image061.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image062.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image063.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image064.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image065.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image066.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image067.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image068.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image069.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image070.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image071.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image072.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image073.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image074.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image075.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image076.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image077.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image078.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image079.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image080.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image081.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image082.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image083.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image084.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image085.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image086.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image087.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image088.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image089.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image090.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image091.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image092.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image093.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image094.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image095.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image096.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image097.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image098.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image099.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image100.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image101.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image102.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image103.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image104.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image105.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image106.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image107.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image108.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image109.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image110.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image111.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image112.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image113.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image114.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image115.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image116.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image117.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image118.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image119.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image120.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image121.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image122.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image123.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image124.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image125.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image126.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image127.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image128.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image129.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image130.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image131.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image132.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image133.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image134.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image135.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image136.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image137.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image138.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image139.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image140.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image141.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image142.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image143.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image144.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image145.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image146.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image147.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image148.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image149.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image150.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image151.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image152.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image153.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image154.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image155.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image156.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image157.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image158.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image159.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image160.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image161.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image162.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image163.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image164.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image165.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image166.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image167.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image168.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image169.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image170.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image171.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image172.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image173.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image174.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image175.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image176.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image177.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image178.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image179.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image180.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image181.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image182.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image183.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image184.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image185.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image186.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image187.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image188.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image189.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image190.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image191.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image192.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image193.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image194.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image195.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image196.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image197.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image198.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image199.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image200.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image201.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image202.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image203.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image204.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image205.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image206.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image207.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image208.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image209.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image210.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image211.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image212.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image213.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image214.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image215.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image216.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image217.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image218.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image219.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image220.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image221.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image222.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image223.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image224.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image225.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image226.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image227.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image228.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image229.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image230.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image231.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image232.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image233.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image234.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image235.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image236.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image237.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image238.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image239.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image240.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image241.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image242.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image243.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image244.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image245.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image246.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image247.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image248.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image249.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image250.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image251.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image252.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image253.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image254.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image255.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image256.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image257.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image258.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image259.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image260.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image261.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image262.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image263.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image264.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image265.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image266.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image267.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image268.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image269.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image270.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image271.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image272.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image273.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image274.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image275.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image276.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image277.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image278.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image279.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image280.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image281.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image282.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image283.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image284.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image285.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image286.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image287.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image288.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image289.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image290.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image291.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image292.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image293.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image294.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image295.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image296.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image297.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image298.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image299.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image300.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image301.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image302.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image303.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image304.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image305.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image306.emz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image307.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image308.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image309.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image310.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image311.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image312.wmz
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image313.gif
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image314.png
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\image315.jpg
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\item0001.xml
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\oledata.mso
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\props0002.xml
+d:\work\ЭУМК_МвПСС (htm)\Теория\word_htm.files\themedata.thmx
+</pre></tt></td></tr></table>
+</body></html>

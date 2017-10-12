@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Приложение</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper"> 
+	<header>
+	  <nav class="navbar navbar-fixed-top">
+	    <div class="container navbar-default">
+	      <ul class="nav navbar-nav events">
+	        <li><a href="#1" name="employee">Рабочие</a></li>
+	        <li><a href="#2" name="agreement">Договора</a></li>
+	        <li><a href="#3" name="service" >Услуги</a></li>
+	        <li><a href="#4" name="material">Материалы</a></li>
+	        <li><a href="#5" name="tool">Инструменты</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	</header>
+	<main>
+		<h1 class="text-center"></h1>
+    <div class="container">
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
+        Редактировать поля
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+        Добавить запись
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
+        Редактировать таблицу
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">
+        Удалить запись
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">
+        Отчеты по запросам
+      </button>
+      <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal6">
+        Премия
+      </button>
+
+      <!-- param premium request -->
+      <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Выделить премию работнику</h4>
+            </div> 
+            <div class="modal-body">
+              <div>
+                <!-- <input type="text" class="form-control input-premium" id="sum"
+                placeholder="Введите фамилию работника"/> -->
+                <select class="form-control input-premium"></select>
+              </div>
+            </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default submit-premium" data-dismiss="modal">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- param premium request -->
+
+      <!-- modal edit-field window -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Добавление/Удаление полей</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h4>Таблицы</h4>
+                  <select size="7" class="form-control select-table">
+                    <option name="employee">Рабочие</option>
+                    <option name="agreement">Договора</option>
+                    <option name="service">Услуги</option>
+                    <option name="material">Материалы</option>
+                    <option name="tool">Инструменты</option>
+                  </select>
+                </div>
+                <div class="col-lg-4">
+                  <h4>Поля</h4>
+                  <select size="7" class="form-control insert-fields"></select>
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-default btn-block add-field">Добавить</button>
+                  <button type="button" class="btn btn-default btn-block delete-field">Удалить</button>
+                </div>
+              </div>
+              <div class="row">
+              <div class="form-horizontal">
+                <div class="form-group">
+                 <label for="field-name" class="col-lg-offset-1 col-lg-3 control-label">Название:</label>
+                 <div class="col-lg-4">
+                   <input type="text" class="form-control" id="field-name" placeholder="Название поля">
+                 </div>
+               </div>
+               <div class="form-group">
+                 <label for="field-type" class="col-lg-offset-1 col-lg-3 control-label">Тип поля:</label>
+                 <div class="col-lg-4">
+                   <select id="field-type" class="form-control">
+                     <option name="TINYTEXT">Текстовый</option>
+                     <option name="INT">Числовой</option>
+                     <option name="DATETIME">Дата/Время</option>
+                     <option name="DECIMAL">Денежный</option>
+                     <option name="BOOLEAN">Логический</option>
+                   </select>
+                 </div>
+               </div>
+              </div>
+              </div>
+            </div>            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- modal edit-field window -->
+      
+      <!-- modal delete-field-button window -->
+      <div class="modal fade" id="myModalDelField" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p></p> 
+            </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- modal delete-field-button window -->
+
+
+      <!-- modal edit-notes -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Сейчас таблица доступна для редактирования!</p> 
+            </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- modal edit-notes window -->
+      
+      <!-- modal reports window -->
+      <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Просмотр и печать отчетов</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-offset-1 col-lg-10">
+                  <h4>Выберите запрос <br>(отчёт откроется в новой вкладке):</h4>
+                  <select class="form-control reports">
+                    <option id="0">Постоянные клиенты фирмы</option>
+                    <option id="1">Прибыль по каждому виду продукции/услуги</option>
+                    <option id="2">Услуги, реализованные на заданную сумму</option>
+                    <option id="3">Динамика пользовательского спроса продукции</option>
+                    <option id="4">Общий список услуг и продукции</option>
+                  </select>
+                </div>
+              </div> 
+            </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+              <button type="button" class="btn btn-info open-report">Открыть</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- modal reports window -->
+      
+      <!-- param request -->
+      <div class="modal fade" id="myModalParam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Параметрический запрос</h4>
+            </div> 
+            <div class="modal-body">
+              <div>
+                <input type="number" class="form-control input-sum" id="sum" placeholder="Введите сумму"/>
+              </div>
+            </div>           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default submit-sum" data-dismiss="modal">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- param request -->
+  
+
+      <div id="ajaxTable"></div>
+      <div>
+        <button type="button" id="save" class="btn btn-info save-changes" data-dismiss="modal">
+          Сохранить изменения
+        </button>
+        <button type="button" id="cancel" class="btn btn-info abort" data-dismiss="modal">
+          Отменить
+        </button>
+      </div> 
+    </div>
+	</main>
+
+</div>
+    <div class="container footer-panel">
+      <div class="col-lg-6">
+        <p><br>&copy; 2017 - All Rights Reserved</p>
+      </div>
+      <div class="col-lg-4 col-lg-offset-2">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="text-right">Разработчик БД:</p>
+          </div>
+          <div class="col-lg-6">
+            <p>Филиппович Е.В.
+              <br>
+              студент гр. 422403
+            </p>
+          </div>
+        </div>
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

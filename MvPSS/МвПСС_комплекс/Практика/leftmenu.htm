@@ -1,0 +1,64 @@
+<!--work by WarLogon april 2012-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>ЭУМКД "Моделирование в проектировании сложных систем"</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+    <link rel="stylesheet" href="../data/nav_style2.css" type="text/css">
+<!--
+! nav_style2 поменять на nav_style + scrolling="yes"
+</head>
+<body bgcolor="#2271b4">
+    <ul id="nav">
+        <li><a href="" target="mainFrame">Общие сведения об устройстве изделия</a>
+		<li><a href="" target="mainFrame">Указания по технике безопасности</a>
+		<li><a href="" target="mainFrame">Подготовка изделия к работе</a>
+		<li><a href="" target="mainFrame">Указания о правилах работы на изделии</a>
+		<li><a href="" target="mainFrame">Указания по техническому обслуживанию изделия</a>
+    </ul>
+</body>
+</html>
+-->
+<script type="text/javascript" src="fixie.js"></script>
+<script language="javascript">
+function showMenu(m) {
+	var ul = document.getElementById("bl_downer"+m);
+	var a = document.getElementById("bl_click"+m);
+	if (ul.style.display == "block") 
+	{ 
+		ul.style.display = "none";
+		a.style.bgColor = "#333333";
+		a.style.color = "#ffffff";
+	} 
+	else 
+	{ 
+		ul.style.display = "block";
+		a.style.bgColor = "#444444";
+		a.style.color = "blue";
+	} 
+}
+</script>
+
+</head>
+<body bgcolor="#2271b4">
+    <ul id="nav">
+        <li><a id="bl_click1" href="#" onClick="showMenu(1)">Лабораторные работы</a>
+       		 <ul id="bl_downer1">
+            	<li><a href="labs/lab_intro.htm" target="rightframe">Ведение</a></li>
+                <li><a href="labs/lab_1.htm" target="rightframe">Лаб. работа 1</a></li>
+                <li><a href="labs/lab_2.htm" target="rightframe">Лаб. работа 2</a></li>
+                <li><a href="labs/lab_3.htm" target="rightframe">Лаб. работа 3</a></li>
+                <li><a href="labs/lab_4.htm" target="rightframe">Лаб. работа 4</a></li>
+                <li><a href="labs/lab_5.htm" target="rightframe">Лаб. работа 5</a></li>
+                <li><a href="labs/lab_6.htm" target="rightframe">Лаб. работа 6</a></li>
+                <li><a href="labs/lab_7.htm" target="rightframe">Лаб. работа 7</a></li>
+                <li><a href="labs/lab_8.htm" target="rightframe">Лаб. работа 8</a></li>
+                <li><a href="labs/lab_list.htm" target="rightframe">Список литературы</a></li>
+                <li><div id="brd"><hr></div></li>
+            </ul>
+        </li>    
+        <li><a href="practic_work.htm" target="rightframe">Практические занятия<br/>(для заочников)</a></li>     
+        <li><a href="ctrl_work.htm" target="rightframe">Контрольная работа<br/>(для заочников)</a></li>        
+    </ul>
+</html>
+

@@ -1,0 +1,26 @@
+PODDON    storage 6
+	generate ,,,1
+BUT 	advance (EXPONENTIAL(1,0,2))
+	split 1,BUT
+	assemble 25
+	test E SF$PODDON,0,KON
+	enter PODDON
+	advance 15
+	seize ZAP_ZAK
+	advance 25,2
+	release ZAP_ZAK
+	assign 1,25
+NAP	advance (UNIFORM(2,7,11))
+	loop 1,NAP
+	split 24
+	
+          assemble 6
+	savevalue YASHIKI+,1
+	assemble 5
+	advance 20
+	leave PODDON
+			
+KON	terminate
+	generate (24#60#60#5)
+	terminate 1
+    start 1

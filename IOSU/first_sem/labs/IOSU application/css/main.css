@@ -1,0 +1,106 @@
+body {
+  padding-top: 70px;
+}
+
+.wrapper {
+  min-height: calc(100vh - 230px);
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 25px;
+  color: #ecf0f1;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #d1ffed;
+  background-color: #27ae62;
+}
+
+
+.navbar-default {
+  background-color: #2ecc71;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  color: #2057f3;
+  margin-bottom: 50px;
+}
+
+#ajaxTable {
+  margin-top: 30px;
+}  
+
+.btn-block {
+  width: 140px;
+  margin-top: 40px;
+}
+
+.form-horizontal {
+  margin-top: 30px;
+}
+
+.form-horizontal .control-label {
+  padding-top: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.changes {
+  display: none;
+}
+
+.table-bordered {
+  border: none;
+}
+
+td[id*=note] {
+  width: 10px;
+  border: none !important;
+  visibility: hidden;
+}
+
+table:hover td[id*=note] {
+  background-color: #ffffff;
+}
+
+.save-changes,
+.abort {
+  visibility: hidden;
+}
+
+.visible{
+  visibility: visible;
+}
+
+
+.footer-panel {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 18px;
+  color: #ecf0f1;
+  background-color: #00b551;
+
+}
+
+.events {
+  margin-left: 200px;
+}
+
+select:hover {
+  cursor: pointer !important;
+}
+
+.add-tool {
+  margin-top: 5px;
+}
+
+
+
+
+
+
+

@@ -6,6 +6,6 @@
 -- drop synonym [name];
 -- drop sequence Staff_seq;
 
--- update staff
--- set sex = 'female'
--- where sno = 35;
+update staff
+set sex = 'female', fname = 'Даша', lname = 'Зыбко'
+where sno = 40;

@@ -1,4 +1,4 @@
--- select table_name from user_tables
+select table_name from user_tables
 -- where tablespace_name = 'SYSTEM';
 -- and rownum <= 4;
 
@@ -9,3 +9,5 @@
 update staff
 set sex = 'female', fname = 'Даша', lname = 'Зыбко'
 where sno = 40;
+
+-- "ed" command - open file with last command;

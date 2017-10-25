@@ -26,6 +26,10 @@ values (Staff_seq.NEXTVAL, 'Даша', 'Зыбко', 'Зеленый луг, 7',
 
 insert into renter
 values (1, 'Андрей', 'Орсич', 'Минск, Кульман 1', '+375 29 9876543',  'h', 100, 3);
+insert into renter
+values (2, 'Миша', 'Гологен', 'Минск, Веры, 8', '+375 29 9876534',  'f', 200, 4);
+insert into renter
+values (3, 'Артур', 'Станкевич', 'Минск, Правды, 12', '+375 29 98745534',  'h', 300, 5);
 
 insert into owner
 select sno, fname, lname, address, tel_no from staff;
@@ -39,4 +43,10 @@ values (3, 'Марка, 5', 'Минск', 'h', 3, 200, 20, 20, 5);
 
 
 insert into viewing
-values (2, 1, to_date('2017/09/28', 'yyyy/mm/dd'), 'Great!!');
+values (1, 1, to_date('2017/09/28', 'yyyy/mm/dd'), 'Great!!');
+insert into viewing(rno, pno, date_o)
+values (1, 2, to_date('2017/09/28', 'yyyy/mm/dd'));
+insert into viewing(rno, pno, date_o)
+values (2, 1, to_date('2017/01/20', 'yyyy/mm/dd'));
+insert into viewing(rno, pno, date_o)
+values (3, 1, to_date('2017/01/20', 'yyyy/mm/dd'));

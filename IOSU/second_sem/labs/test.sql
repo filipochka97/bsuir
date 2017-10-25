@@ -1,5 +1,5 @@
 select table_name from user_tables
--- where tablespace_name = 'SYSTEM';
+where tablespace_name = 'SYSTEM';
 -- and rownum <= 4;
 
 -- drop table branch cascade constraints;
@@ -13,6 +13,6 @@ where sno = 40;
 insert into owner
 values (20, 'Ольга', 'Прус', 'Пилипки, 10', '+ 375 25 2223344');
 
-update objects
-set sno = 10
-where pno = 3;
+update viewing
+set date_o = to_date('2017/10/20', 'yyyy/mm/dd')
+where rno = 1 and pno = 1;

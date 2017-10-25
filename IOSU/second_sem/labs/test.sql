@@ -1,4 +1,4 @@
--- select table_name from user_tables
+select table_name from user_tables
 -- where tablespace_name = 'SYSTEM';
 -- and rownum <= 4;
 

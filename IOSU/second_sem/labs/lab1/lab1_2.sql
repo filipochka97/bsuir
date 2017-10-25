@@ -22,7 +22,7 @@ values (Staff_seq.NEXTVAL, 'Анна', 'Константинова', 'Моско
 insert into staff
 values (Staff_seq.NEXTVAL, 'Лариса', 'Немцова', 'Приозерная, 7', '+375 25 97125925', 'Engineer', 'female', to_date('1999/02/23', 'yy/mm/dd'), 1900, 4);
 insert into staff
-values (Staff_seq.NEXTVAL, 'Димас', 'Ельцин', 'Зеленый луг, 7', '+375 25 97146525', 'HR', 'male', to_date('1999/02/23', 'yy/mm/dd'), 100, 5);
+values (Staff_seq.NEXTVAL, 'Даша', 'Зыбко', 'Зеленый луг, 7', '+375 25 97146525', 'HR', 'female', to_date('1999/02/23', 'yy/mm/dd'), 100, 5);
 
 insert into renter
 values (1, 'Андрей', 'Орсич', 'Минск, Кульман 1', '+375 29 9876543',  'h', 100, 3);
@@ -34,6 +34,9 @@ insert into objects
 values (1, 'Правды, 95', 'Пуховичи', 'h', 3, 100, 10, 10, 3);
 insert into objects
 values (2, 'Звезды, 95', 'Кобрин', 'f', 4, 200, 15, 15, 4);
+insert into objects
+values (3, 'Марка, 5', 'Минск', 'h', 3, 200, 20, 20, 5);
+
 
 insert into viewing
 values (2, 1, to_date('2017/09/28', 'yyyy/mm/dd'), 'Great!!');

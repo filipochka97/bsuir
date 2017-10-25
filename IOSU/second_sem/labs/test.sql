@@ -9,3 +9,10 @@
 update staff
 set sex = 'female', fname = 'Даша', lname = 'Зыбко'
 where sno = 40;
+
+insert into owner
+values (20, 'Ольга', 'Прус', 'Пилипки, 10', '+ 375 25 2223344');
+
+update objects
+set sno = 10
+where pno = 3;

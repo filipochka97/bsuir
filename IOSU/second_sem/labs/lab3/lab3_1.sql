@@ -26,7 +26,12 @@ create or replace view count_with_comment as
 select count(comment_0) "Viewings with comments" from viewing;
 
 --4
---later
+create or replace view info_renter as
+select r.* from objects o
+join viewing v on o.pno = v.pno
+join renter r on r.rno = v.rno
+where rooms = '3' and o.city = r.city;
+
 
 --5
 create or replace view info_max_employee

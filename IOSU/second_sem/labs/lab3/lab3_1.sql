@@ -27,10 +27,10 @@ select count(comment_0) "Viewings with comments" from viewing;
 
 --4
 create or replace view info_renter as
-select r.* from objects o
-join viewing v on o.pno = v.pno
-join renter r on r.rno = v.rno
-where rooms = '3' and o.city = r.city;
+select distinct r.* from objects o, renter r, viewing v
+where o.rooms = 3
+    and instr(r.address, o.city) != 0
+    and r.rno = v.rno;
 
 
 --5
@@ -53,9 +53,7 @@ select staff.fname, staff.lname,  objects.city, objects.street, tb.comment_0
 from objects
 join (
     select * from viewing
-	where to_char(date_o, 'Q') = (
-		select to_char(sysdate,'Q') from dual
-	)
+	where to_char(date_o, 'Q') = to_char(sysdate,'Q')
 ) tb on objects.pno = tb.pno
 join staff on staff.sno = objects.sno;
 

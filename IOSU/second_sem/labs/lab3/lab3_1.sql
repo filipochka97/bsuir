@@ -18,7 +18,7 @@ where city = 'Брест';
 create or replace view min_rent as
 select * from objects
 where rent = (
-    select min(rent) from objects
+  select min(rent) from objects
 );
 
 --3
@@ -29,22 +29,22 @@ select count(comment_0) "Viewings with comments" from viewing;
 create or replace view info_renter as
 select distinct r.* from objects o, renter r, viewing v
 where o.rooms = 3
-    and instr(r.address, o.city) != 0
-    and r.rno = v.rno;
+  and instr(r.address, o.city) != 0
+  and r.rno = v.rno;
 
 
 --5
 create or replace view info_max_employee
 select * from branch
 where bno in (
-    select bno from staff
-    group by bno
-    having count(bno) in (
-        select max(count_bno) from (
-            select count(bno) count_bno from staff
-            group by bno
-        )
-    )
+  select bno from staff
+  group by bno
+  having count(bno) in (
+      select max(count_bno) from (
+          select count(bno) count_bno from staff
+          group by bno
+      )
+  )
 );
 
 --6
@@ -52,8 +52,8 @@ create or replace view info_current_q as
 select staff.fname, staff.lname,  objects.city, objects.street, tb.comment_0
 from objects
 join (
-    select * from viewing
-	where to_char(date_o, 'Q') = to_char(sysdate,'Q')
+  select * from viewing
+where to_char(date_o, 'Q') = to_char(sysdate,'Q')
 ) tb on objects.pno = tb.pno
 join staff on staff.sno = objects.sno;
 
@@ -61,11 +61,11 @@ join staff on staff.sno = objects.sno;
 create or replace view more_than_two as
 select * from owner
 where ono in (
-    select ono from objects
-    where pno in (
-        select pno from viewing
-        group by pno
-        having count(pno) > 2
-    )
+  select ono from objects
+  where pno in (
+      select pno from viewing
+      group by pno
+      having count(pno) > 2
+  )
 );
 

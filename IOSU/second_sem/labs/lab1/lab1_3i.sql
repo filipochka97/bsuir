@@ -207,3 +207,6 @@ select * from dual;
 
 -- insert into employee(firstname, lastname, occupation, category, experience)
 -- values('Helen', 'Daylidko', 'carpenter', 6, 20);
+
+-- insert into expensive_cost(name, cost, max_term, guarantee_period)
+-- values('Furniture assembly', '30', '15', '3 years');

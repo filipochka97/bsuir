@@ -198,3 +198,12 @@ insert all
   into agreement(id_client, id_service, id_employee, id_material, id_tool)
   values(3, 5, 3, 3, 3)
 select * from dual;
+
+-- insert into agreement(id_client, id_service, id_employee, id_material, id_tool)
+-- values (1, 3, 1, 1, 1);
+
+-- insert into client(pass_data, firstname, lastname, mobile_tel)
+-- values('HY2347854', 'Anna', 'Filkova', '+375 44 51171191');
+
+-- insert into employee(firstname, lastname, occupation, category, experience)
+-- values('Helen', 'Daylidko', 'carpenter', 6, 20);

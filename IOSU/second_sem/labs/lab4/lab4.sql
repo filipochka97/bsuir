@@ -83,28 +83,11 @@ create or replace package body my_package is
   return agr_number;
 
   exception
-    when others then
-      raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
+    when others then return 0;
   end agreements_number;
 
 end my_package;
 /
-
---- test package
-begin
-  my_package.change_cost(7, 40);
-end;
-/
-
-select my_package.agreements_number(
-  to_date('2017/09/01', 'yyyy/mm/dd'),
-  to_date('2017/11/07', 'yyyy/mm/dd')
-) as "Agreements number" from dual;
-
-select my_package.agreements_number(
-  to_date('2017/09/01', 'yyyy/mm/dd')
-) as "Agreements number" from dual;
----
 
 
 -- anonymous block
@@ -125,7 +108,28 @@ begin
   agr_count := 0;
 
   -- select my_package.agreements_number(
-  --     to_date('2017/09/01', 'yyyy/mm/dd')
+  --     to_date('2017/09/01', 'yyyy/mm/dd'), to_number('2017/09/01', 'yyyy/mm/dd')
   --   ) as "Agreements number" into agr_count from dual;
+end;
+/
+
+
+
+-- local and overloaded programm
+declare
+  function sum_func(a in varchar2, b in varchar2)
+    return number is
+  begin
+    return a + b;
+  end;
+
+  function sum_func(a in number, b in number)
+    return number is
+  begin
+    return a + b;
+  end;
+begin
+  dbms_output.put_line('Sum of two strings is ' || sum_func('1', '1'));
+  dbms_output.put_line('Sum of two numbers is ' || sum_func(1, 1));
 end;
 /

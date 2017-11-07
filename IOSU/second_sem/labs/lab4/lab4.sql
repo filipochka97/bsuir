@@ -105,3 +105,27 @@ select my_package.agreements_number(
   to_date('2017/09/01', 'yyyy/mm/dd')
 ) as "Agreements number" from dual;
 ---
+
+
+-- anonymous block
+declare
+  agr_count number := 0;
+begin
+  my_package.change_cost(7, 60); -- correct
+  my_package.change_cost(1, 20); -- there's no record with such id
+  my_package.change_cost(3, 19); -- cost is too low(constraint)
+
+  select my_package.agreements_number(
+    to_date('2017/09/01', 'yyyy/mm/dd'),
+    to_date('2017/11/07', 'yyyy/mm/dd')
+  ) as "Agreements number" into agr_count from dual;
+
+  dbms_output.put_line('Number of agreements is ' || agr_count);
+
+  agr_count := 0;
+
+  -- select my_package.agreements_number(
+  --     to_date('2017/09/01', 'yyyy/mm/dd')
+  --   ) as "Agreements number" into agr_count from dual;
+end;
+/

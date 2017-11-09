@@ -32,7 +32,6 @@ where o.rooms = 3
   and instr(r.address, o.city) != 0
   and r.rno = v.rno;
 
-
 --5
 create or replace view info_max_employee
 select * from branch

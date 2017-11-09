@@ -21,5 +21,6 @@ alter table renter
 add city varchar2(30);
 
 update renter
-set city='Пуховичи'
+set city = 'Пуховичи'
 where rno = 1;
+

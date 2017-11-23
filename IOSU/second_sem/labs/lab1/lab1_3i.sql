@@ -20,7 +20,8 @@ create table service (
   name varchar2(20) not null,
   cost number(5) check(cost >= 20),
   max_term number(2) check(max_term <= 30),
-  guarantee_period varchar(20) not null
+  guarantee_period varchar(20) not null,
+  completed char(1) check(completed in ('y', 'n'))
 );
 
 create table material (
@@ -49,11 +50,24 @@ create table client (
 create table agreement (
   id_agreement number(3) primary key,
   order_date date default sysdate,
-  id_client references client,
-  id_service references service,
-  id_employee references employee,
+  expiration_date date not null,
+  cost number(5) not null,
+  discount number(5) not null,
+  total_cost number(5) not null
+);
+
+create table orders (
+  id_agreement number(3),
+  id_service number(3),
   id_material references material,
-  id_tool references tool
+  id_tool references tool,
+  id_client references client,
+  id_employee references employee,
+  material_amount number(3),
+  tool_amount number(3),
+  constraint pr_orders primary key(id_agreement, id_service),
+  constraint fr_agreement foreign key(id_agreement) references agreement,
+  constraint fr_service foreign key(id_service) references service
 );
 
 
@@ -107,23 +121,13 @@ begin
 end;
 /
 
-create or replace trigger trg_id_agreement
-before insert on agreement
-for each row
-begin
-  select seq_id_agreement.nextval
-  into :new.id_agreement
-  from dual;
-end;
-/
-
-
 create synonym e for employee;
 create synonym s for service;
 create synonym m for material;
 create synonym t for tool;
 create synonym c for client;
 create synonym a for agreement;
+create synonym o for orders;
 
 
 create index employee_idx
@@ -155,12 +159,12 @@ insert all
 select * from dual;
 
 insert all
-  into service(name, cost, max_term, guarantee_period)
-  values('Door installation', '20', '30', '1 year')
-  into service(name, cost, max_term, guarantee_period)
-  values('Windows installation', '30', '10', '3 years')
-  into service(name, cost, max_term, guarantee_period)
-  values('Laying laminate', '40', '20', '2 years')
+  into service(name, cost, max_term, guarantee_period, completed)
+  values('Door installation', '20', '30', '1 year', 'y')
+  into service(name, cost, max_term, guarantee_period, completed)
+  values('Windows installation', '30', '10', '3 years', 'y')
+  into service(name, cost, max_term, guarantee_period, completed)
+  values('Laying laminate', '40', '20', '2 years', 'y')
 select * from dual;
 
 insert all
@@ -189,24 +193,3 @@ insert all
   into client(pass_data, firstname, lastname, mobile_tel)
   values('HK2450967', 'Alik', 'Franchmen', '+375 33 2834056')
 select * from dual;
-
-insert all
-  into agreement(order_date, id_client, id_service, id_employee, id_material, id_tool)
-  values(to_date('2017/09/01', 'yyyy/mm/dd'), 1, 3, 1, 1, 1)
-  into agreement(order_date, id_client, id_service, id_employee, id_material, id_tool)
-  values(to_date('2017/10/15', 'yyyy/mm/dd'), 2, 4, 2, 2, 2)
-  into agreement(id_client, id_service, id_employee, id_material, id_tool)
-  values(3, 5, 3, 3, 3)
-select * from dual;
-
--- insert into agreement(id_client, id_service, id_employee, id_material, id_tool)
--- values (1, 3, 1, 1, 1);
-
--- insert into client(pass_data, firstname, lastname, mobile_tel)
--- values('HY2347854', 'Anna', 'Filkova', '+375 44 51171191');
-
--- insert into employee(firstname, lastname, occupation, category, experience)
--- values('Helen', 'Daylidko', 'carpenter', 6, 20);
-
--- insert into expensive_cost(name, cost, max_term, guarantee_period)
--- values('Furniture assembly', '30', '15', '3 years');

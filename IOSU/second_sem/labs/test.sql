@@ -24,3 +24,17 @@ update renter
 set city = 'Пуховичи'
 where rno = 1;
 
+select * from staff
+where sno in (
+  select s.sno from staff s, property_for_rent p
+  where s.sno = p.sno and p.type = 'h'
+  group by s.sno
+  having count(p.pno) > (
+    select count(p.pno) from property_for_rent p
+    where s.sno = p.sno and p.type = 'f'
+  )
+);
+
+
+
+

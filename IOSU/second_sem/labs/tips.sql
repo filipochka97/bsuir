@@ -1,5 +1,8 @@
 desc [tablename];
 
+select table_name from user_tables
+where tablespace_name = 'SYSTEM';
+
 select constraint_name, constraint_type from user_constraints
 where table_name = 'STAFF';
 

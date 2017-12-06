@@ -18,3 +18,13 @@ where ucc.table_name = 'OWNER' and uc.constraint_name = ucc.constraint_name;
 SELECT OBJECT_NAME, OBJECT_TYPE, STATUS
 FROM USER_OBJECTS
 WHERE OBJECT_TYPE IN ('PROCEDURE', 'FUNCTION');
+
+
+select * from waybills wy, workers wr
+where wr.workers = wy.workers
+group by to_char(wb_date, 'MM/YYYY')
+
+
+
+
+to_char(sysdate, 'MM') || '.' || to_char(sysdate, 'YYYY')

@@ -51,8 +51,7 @@ create table agreement (
   id_agreement number(3) primary key,
   order_date date default sysdate,
   expiration_date date not null,
-  cost number(5) not null,
-  discount number(5) not null,
+  discount number(5),
   total_cost number(5) not null
 );
 

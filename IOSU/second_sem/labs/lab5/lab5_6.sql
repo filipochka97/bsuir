@@ -1,3 +1,5 @@
+-- *Написать триггер INSTEAD OF для работы с необновляемым представлением.
+
 create or replace view group_employees as
 select occupation, category, count(occupation) employee_count from employee
 group by occupation, category;

@@ -6,7 +6,9 @@ create table log3 (
   id number(5) primary key,
   username varchar2(10),
   change_type varchar2(6) check(change_type in ('LOGON', 'LOGOFF')),
-  datelog date default sysdate
+  datelog date default sysdate,
+  timelog varchar2(10) default to_char(sysdate, 'hh24:mi:ss'),
+  records_count number
 );
 
 create sequence log3_sequence;
@@ -23,18 +25,24 @@ end;
 
 create or replace trigger system_logoff_trigger
 before logoff on database
+when (user != 'SYS')
 declare
+  v_records_count number;
 begin
-  insert into log3 (username, change_type)
-  values (user, ora_sysevent);
+  select count(*) into v_records_count from agreement;
+  insert into log3 (username, change_type, records_count)
+  values (user, ora_sysevent, v_records_count);
 end;
 /
 
 create or replace trigger system_logon_trigger
 after logon on database
+when (user != 'SYS')
 declare
+  v_records_count number;
 begin
-  insert into log3 (username, change_type)
-  values (user, ora_sysevent);
+  select count(*) into v_records_count from agreement;
+  insert into log3 (username, change_type, records_count)
+  values (user, ora_sysevent, v_records_count);
 end;
 /

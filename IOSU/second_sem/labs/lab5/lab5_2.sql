@@ -25,7 +25,7 @@ before create or alter or drop on database
 declare
   change_type log2.change_type%type;
 begin
-  if to_char(sysdate, 'hh24') between 9 and 16
+  if to_char(sysdate, 'hh24') between 9 and 20
   then
     case ora_sysevent
       when 'CREATE'

@@ -47,7 +47,17 @@ end;
 
 ---
 insert into orders(id_agreement, id_service, id_material, material_amount, id_tool, tool_amount, id_employee, id_client)
-values (2, 3, 1, 1, 1, 1, 3, 1);
+values (1, 4, 1, 1, 1, 1, 3, 1);
+
+insert into orders(id_agreement, id_service, id_material, material_amount, id_tool, tool_amount, id_employee, id_client)
+values (1, 5, 1, 1, 1, 1, 3, 1);
+
+insert into orders(id_agreement, id_service, id_material, material_amount, id_tool, tool_amount, id_employee, id_client)
+values (2, 7, 1, 1, 1, 1, 3, 1);
+
+-- error, service is already booked
+insert into orders(id_agreement, id_service, id_material, material_amount, id_tool, tool_amount, id_employee, id_client)
+values (2, 3, 1, 1, 1, 195, 3, 1);
 
 
 -- Контролировать количество материала и продукции в наличии при заключении договора, не допускать
@@ -89,6 +99,11 @@ begin
   end if;
 end;
 /
+
+---
+insert into orders(id_agreement, id_service, id_material, material_amount, id_tool, tool_amount, id_employee, id_client)
+values (1, 3, 1, 1, 1, 199, 3, 1);
+
 
 
 -- Ежедневно вести учет договоров, по которым истечение сроков

@@ -4,8 +4,8 @@
 -- 2) при помощи COMPAUND триггера.
 
 update agreement
-set discount = null
-where discount is not null;
+set discount = 3
+where discount is null;
 
 
 -- 1 --

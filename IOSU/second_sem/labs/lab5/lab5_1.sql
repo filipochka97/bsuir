@@ -30,7 +30,6 @@ after insert or update or delete
 on material
 for each row
 declare
-  -- pragma autonomous_transaction;
   change_type log1.change_type%type;
   old_value log1.old_value%type;
   new_value log1.new_value%type;
@@ -51,6 +50,5 @@ begin
 
   insert into log1 (username, dateoper, change_type, table_name, column_name, old_value, new_value)
   values(user, sysdate, change_type, 'material', 'provider', old_value, new_value);
-  -- commit;
 end;
 /

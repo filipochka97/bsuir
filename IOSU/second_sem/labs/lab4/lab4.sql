@@ -7,7 +7,7 @@
 В качестве параметра передать начальную и конечную даты периода.
 
 При создании следует выполнить следующие минимальные требования к синтаксису:
--    использовать явный курсор или курсорную переменную, а также атрибуты курсора;
+-    исполь зовать явный курсор или курсорную переменную, а также атрибуты курсора;
 -    использовать пакет DBMS_OUTPUT для вывода результатов работы в SQLPlus;
 -    предусмотреть секцию обработки исключительных ситуаций, причем обязательно использовать
      как предустановленные исключительные ситуации, так и собственные
@@ -109,89 +109,91 @@ end;
 /
 
 
--- local and overloaded programm
+-- overloaded programm
 declare
-    procedure change_cost
-      (id in number, new_cost in number)
-    is
-      old_cost service.cost%type;
-      service_name service.name%type;
-      cost_ratio number;
-      output_message varchar2(60);
+  procedure change_cost
+    (id in number, new_cost in number)
+  is
+    old_cost service.cost%type;
+    service_name service.name%type;
+    cost_ratio number;
+    output_message varchar2(60);
 
-      min_cost exception;
-      pragma exception_init(min_cost, -02290);
-    begin
+    min_cost exception;
+    pragma exception_init(min_cost, -02290);
+  begin
 
-      select cost, name
-      into old_cost, service_name
+    select cost, name
+    into old_cost, service_name
+    from service
+    where id_service = id;
+
+    if old_cost < new_cost then
+      cost_ratio := round((new_cost - old_cost) / old_cost * 100);
+      output_message := ' has risen in price by ' || cost_ratio || '%.';
+    elsif old_cost > new_cost then
+      cost_ratio := round((old_cost - new_cost) / old_cost * 100);
+      output_message := ' has become cheaper by ' || cost_ratio || '%.';
+    else output_message := ' price has remained the same.';
+    end if;
+
+    update service set cost = new_cost
+    where id_service = id;
+
+    commit;
+
+    dbms_output.put_line(service_name || output_message);
+
+  exception
+    when no_data_found then
+      dbms_output.put_line('There is no records with such id');
+    when min_cost then
+      dbms_output.put_line('Cost of service mustn''t be so cheap');
+  end change_cost;
+
+
+  procedure change_cost
+    (v_name in varchar2, new_cost in number)
+  is
+    old_cost service.cost%type;
+    service_name service.name%type;
+    cost_ratio number;
+    output_message varchar2(60);
+
+    min_cost exception;
+    pragma exception_init(min_cost, -02290);
+  begin
+
+    for rec in (select cost, name
       from service
-      where id_service = id;
+      where name = v_name
+    )
+      loop
+        old_cost := rec.cost;
+        service_name := rec.name;
+          if old_cost < new_cost then
+            cost_ratio := round((new_cost - old_cost) / old_cost * 100);
+            output_message := ' has risen in price by ' || cost_ratio || '%.';
+          elsif old_cost > new_cost then
+            cost_ratio := round((old_cost - new_cost) / old_cost * 100);
+            output_message := ' has become cheaper by ' || cost_ratio || '%.';
+          else output_message := ' price has remained the same.';
+          end if;
 
-      if old_cost < new_cost then
-        cost_ratio := round((new_cost - old_cost) / old_cost * 100);
-        output_message := ' has risen in price by ' || cost_ratio || '%.';
-      elsif old_cost > new_cost then
-        cost_ratio := round((old_cost - new_cost) / old_cost * 100);
-        output_message := ' has become cheaper by ' || cost_ratio || '%.';
-      else output_message := ' price has remained the same.';
-      end if;
+        update service set cost = new_cost
+        where name = v_name;
 
-      update service set cost = new_cost
-      where id_service = id;
-
-      commit;
+        commit;
 
       dbms_output.put_line(service_name || output_message);
+    end loop;
 
-    exception
-      when no_data_found then
-        dbms_output.put_line('There is no records with such id');
-      when min_cost then
-        dbms_output.put_line('Cost of service mustn''t be so cheap');
-    end change_cost;
-
-
-    procedure change_cost
-      (id in varchar2, new_cost in number)
-    is
-      old_cost service.cost%type;
-      service_name service.name%type;
-      cost_ratio number;
-      output_message varchar2(60);
-
-      min_cost exception;
-      pragma exception_init(min_cost, -02290);
-    begin
-
-      select cost, name
-      into old_cost, service_name
-      from service
-      where name = id;
-
-      if old_cost < new_cost then
-        cost_ratio := round((new_cost - old_cost) / old_cost * 100);
-        output_message := ' has risen in price by ' || cost_ratio || '%.';
-      elsif old_cost > new_cost then
-        cost_ratio := round((old_cost - new_cost) / old_cost * 100);
-        output_message := ' has become cheaper by ' || cost_ratio || '%.';
-      else output_message := ' price has remained the same.';
-      end if;
-
-      update service set cost = new_cost
-      where name = id;
-
-      commit;
-
-      dbms_output.put_line(service_name || output_message);
-
-    exception
-      when no_data_found then
-        dbms_output.put_line('There is no records with such id');
-      when min_cost then
-        dbms_output.put_line('Cost of service mustn''t be so cheap');
-    end change_cost;
-
+  exception
+    when no_data_found then
+      dbms_output.put_line('There is no records with such id');
+    when min_cost then
+      dbms_output.put_line('Cost of service mustn''t be so cheap');
+  end change_cost;
 
 begin
   dbms_output.put_line(chr(13));
